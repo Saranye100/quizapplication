@@ -28,6 +28,9 @@ The project consists of the following files:
 2.	Open index.html in a browser to start the quiz.
 3.	The application fetches quiz questions from the questions.json file and displays them on the page.
 
+### Form Submission Behavior
+The **Submit** button is only enabled once all the questions have been answered. This ensures that users complete all required fields before submission.
+
    How to Use
 
 1.	Start the Quiz:
