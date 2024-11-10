@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quiz Application UI</h1>
+        </div>
+        <div class="quiz-box">
+            <div id="quiz"></div>
+            <div id="result" class="result-box" style="display:none;"></div>
+            <div class="button-container" style="display:none; position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);">
+                <button id="submit" disabled>Submit</button>
+            </div>
+            <button id="restart" class="restart-button" style="display:none;">Click to Start Again</button>
+            <button id="exit" class="exit-button" style="display:none;">Exit</button> <!-- New Exit Button -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-color: #007bff; /* Blue background */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.container {
+    max-width: 800px; /* Set a max width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 10px; /* Add padding for small screens */
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button {
+    background-color: #007bff; /* Submit button color */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Smaller padding for compact size */
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px; /* Add space between buttons */
+    width: auto; /* Auto width */
+    min-width: 100px; /* Set a minimum width for better accessibility */
+}
+
+.restart-button {
+    background-color: #28a745; /* Different color for the restart button */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Match padding with other buttons */
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; /* Ensure it is displayed as a block element */
+    margin-top: 20px; /* Space above the restart button */
+    width: auto; /* Auto width */
+    min-width: 100px; /* Set a minimum width for better accessibility */
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #e7f1ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    button {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .container {
+        padding: 20px; /* More padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem; /* Smaller font size for header */
+    }
+
+    .quiz-box {
+        padding: 15px; /* Less padding for mobile */
+    }
+}
